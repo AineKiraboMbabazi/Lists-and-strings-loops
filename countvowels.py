@@ -1,5 +1,5 @@
-def vowel_count():
-    txt=input("Enter string: ")
+def vowel_count(txt):
+    
     vowels='aeiou'
     newtxt=txt.lower()
     noduplicates=set(newtxt)
@@ -18,6 +18,5 @@ def vowel_count():
 
 
 if __name__ == "__main__":
-   
-    
-    print(vowel_count())
+    txt=input("Enter string: ")
+    print(vowel_count(txt))

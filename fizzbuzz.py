@@ -1,19 +1,22 @@
 def fizzbuzz(list1,list2):
-    newlist=list1+list2
-    mylist=len(newlist)
-    if(mylist%5==0 and mylist%3==0):
-        message="fizzbuzz"
-        
-       
-    elif (mylist%5==0):
-        message="buzz"
-        
-    elif (mylist%3==0):
-         message="fizz"
-         
+    if not (isinstance(list1,list) and isinstance(list2,list)):
+        return 'please enter lists only'
     else:
-        message=len(newlist)
-    return message
+        newlist=list1+list2
+        mylist=len(newlist)
+        if(mylist%5==0 and mylist%3==0):
+            message="fizzbuzz"
+            
+        
+        elif (mylist%5==0):
+            message="buzz"
+            
+        elif (mylist%3==0):
+            message="fizz"
+            
+        else:
+            message=len(newlist)
+        return message
 
 
 

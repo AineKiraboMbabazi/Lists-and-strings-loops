@@ -1,6 +1,6 @@
 def vowel_count(txt):
     if not isinstance (txt,str):
-        return 'invalid input'
+        raise TypeError ('invalid input')
     else:
         vowels='aeiou'
         newtxt=txt.lower()

@@ -6,7 +6,8 @@ class testcountvowels(unittest.TestCase):
 
 
     def test_input_is_string(self):
-        self.assertEqual(vowel_count([1,2,3,4]),'invalid input')
+        with self.assertRaises(TypeError):
+            vowel_count([1,2,3,4])
 
 
 
